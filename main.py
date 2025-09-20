@@ -4,6 +4,8 @@ import tensorflow as tf
 from tensorflow.keras.datasets import imdb
 from tensorflow.keras.preprocessing import sequence
 from tensorflow.keras.models import load_model
+from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.layers import Embedding, SimpleRNN, Dense
 
 # Load the IMDB dataset word index
 word_index = imdb.get_word_index()
